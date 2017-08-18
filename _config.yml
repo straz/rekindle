@@ -1,0 +1,13 @@
+# Site settings
+title: Rekindle Your Craft
+email: info@rekindleyourcraft.com
+admin_email: bies-admin@hms.harvard.edu
+description: > # this means to ignore newlines until "baseurl:"
+  To promote writing.
+  We hold monthly meetups at TheVillageWorks, Brookline MA
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://rekindleyourcraft.com" 
+
+# Build settings
+markdown: kramdown
+
