@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cutive');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 .rekindle {
    h1 {
@@ -30,6 +31,10 @@
 .next-meeting {
   margin-top: 3em;
   .row {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
+  }
+  .wordy-btn {
+      font-family: Lobster;
+      font-size: 200%;
   }
 }
