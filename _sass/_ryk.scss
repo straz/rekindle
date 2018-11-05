@@ -10,6 +10,10 @@
   }
 }
 
+input#email {
+    width: 20em;
+ }
+
 .announce {
     margin-top: 0em;
     margin-bottom: 7em;
@@ -64,8 +68,14 @@
 
 .frame2 .alert {
     display: none;
+    i {
+	font-size: 200%;
+        margin-right: .3em;
+    }
 }
 
 .spinner {
     display: none;
+    font-size: 200%;
+    color: #888;
 }
