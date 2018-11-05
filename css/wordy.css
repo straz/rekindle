@@ -1,0 +1,17 @@
+div.main {
+  width: 10em;
+  padding: 2em;
+  margin-top: 3em;
+  font-family: Lora, Helvetica;
+  font-size: 200%;
+  border-radius: 4px;
+}
+
+.main.done {
+  background-color: #DDF;
+}
+
+button.spin {
+ margin-top: 3em;
+}
+
