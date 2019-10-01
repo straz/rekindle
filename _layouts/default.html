@@ -2,10 +2,17 @@
 <html>
   {% include head.html %}
 <body>
-<div class="rekindle container">
-  <img class="big-typewriter" src="pix/typewriter.svg"/>
+  <div class="rekindle container">
+    <div class="row mt-5 mb-5 justify-content-center">
+      <div><a href="/"><img class="big-typewriter" src="pix/typewriter.svg"/></a></div>
+    </div>
+    {% if page.home %}
+    <div class="row home mb-4">
+      <a href="/"><i class="fa fa-caret-left ml-4 mr-2"></i><span>Home</span></a>
+    </div>
+    {% endif %}
   {{ content }}
-</div>
-<div style="height: 5em"></div>
+  </div>
+  <div style="height: 5em"></div>
 </body>
 </html>

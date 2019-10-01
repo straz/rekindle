@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cutive');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
+.home {
+}
+
 .big-typewriter {
-  margin-top: 3em;
-  max-height: 10em;
-  max-width: 10em;
-  path {
-      fill: $grey-color;
-  }
+    width: 8em; /* you can use % */
+    height: auto;
 }
 
 input#email {
@@ -41,6 +40,12 @@ input#email {
       font-family: 'Cutive', serif;
       color: #666;
   }
+  h3 {
+      margin-top: 2em;
+      font-family: 'Cutive', serif;
+      color: #666;
+      font-size: 130%;
+   }
   .infocard {
       border-top: solid 1px gray;
       padding-top: 3em;
