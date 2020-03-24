@@ -39,6 +39,14 @@ input#email {
    h2 {
       font-family: 'Cutive', serif;
       color: #666;
+      .virtual {
+	  color:red;
+          font-style: italic;
+          i { 
+              margin-left: 3em;
+              margin-right: .5em;
+	  }
+      }
   }
   h3 {
       margin-top: 2em;
