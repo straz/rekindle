@@ -4,8 +4,6 @@ navtab: home
 title: Rekindle your craft
 ---
 
-{% assign event = site.data.events | first %}
-
 <h1 class="text-center">RE-KINDLE YOUR CRAFT</h1>
 <h2 class="text-center">a free writing workshop</h2>
 
@@ -16,13 +14,26 @@ title: Rekindle your craft
 
 
 <div class="next-meeting infocard">
-  <h2>Next meeting</h2>
+  <h2>Next meetings</h2>
   <div class="row">
     <div class="col-2"><em>When</em></div>
 
-    <!-- <div class="col-4"><b>{{ event.day }}</b> {{ event.date }}<br/>{{ event.time }}</div> -->
-    <div class="col-4 summer"><i class="fa fa-sun-o mr-2"></i>
-        We're off for the summer!<br/>See you in Fall, 2020</div>
+    <div class="col-4">
+      {% for event in site.data.events %}
+      <div class="row">
+	<div class="col-8">
+	  <b>{{ event.day }}</b> {{ event.date }}<br/>{{ event.time }}
+	</div>
+
+	<div class="col"><a href="{{ event.eventbrite }}"
+					  target="eventbrite"
+					  class="btn btn-primary">Register</a></div>
+      </div>
+      {% endfor %}
+  </div>
+  
+    <!-- <div class="col-4 summer"><i class="fa fa-sun-o mr-2"></i>
+        We're off for the summer!<br/>See you in Fall, 2020</div> -->
     </div>
 
     <div class="row">
@@ -47,10 +58,9 @@ title: Rekindle your craft
       <div class="col-4">No cost to attend.</div>
     </div>
 
+    {% assign one_event = site.data.events | first %}
+
     <div class="row">
-      <div class="col-4 offset-sm-2"><a href="{{ event.eventbrite }}"
-					target="eventbrite"
-					class="btn btn-primary">Register</a></div>
     </div>
 
   </div>
