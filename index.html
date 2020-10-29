@@ -4,10 +4,10 @@ navtab: home
 title: Rekindle your craft
 ---
 
-<h1 class="text-center">RE-KINDLE YOUR CRAFT</h1>
+<h1 class="text-center"><span class="re">RE</span>KINDLE YOUR CRAFT</h1>
 <h2 class="text-center">a free writing workshop</h2>
 
-<p>Join us for some inspired hands-on writing time.</p>
+<p class="mt-5">Join us for some inspired hands-on writing time.</p>
 
 <p>We’ll work from an evocative prompt, check in about our work, and hang out afterwards.</p>
 <p>If your writing is stuck then we guarantee you’ll be glad you came. Beginner or advanced, all writers welcome.</p>
@@ -16,12 +16,10 @@ title: Rekindle your craft
 <div class="next-meeting infocard">
   <h2>Next meetings</h2>
   <div class="row">
-    <div class="col-2"><em>When</em></div>
-
-    <div class="col-4">
+    <div class="col">
       {% for event in site.data.events %}
-      <div class="row">
-	<div class="col-8">
+      <div class="row mb-5">
+	<div class="col-4">
 	  <b>{{ event.day }}</b> {{ event.date }}<br/>{{ event.time }}
 	</div>
 
@@ -37,24 +35,21 @@ title: Rekindle your craft
     </div>
 
     <div class="row">
-      <div class="col-2"><em>Where</em></div>
       <div class="col-4"><span class="virtual"><i class="fa fa-desktop"></i>We&rsquo;ve gone virtual!</span></div>
 
     </div>
 
     <div class="row">
-      <div class="col-2"><em>What</em></div>
       <div class="col-4">Read about <a href="expect">what to expect</a> at Rekindle</div>
     </div>
 
     <div class="row">
-      <div class="col-2"><em>Organized by</em></div>
-      <div class="col-4"><a href="http://daphnestrassmann.com">Daphne Strassmann</a>
+      <div class="col-4">Organized by <a href="http://daphnestrassmann.com">Daphne Strassmann</a>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-2"><em>and...</em></div>
+
       <div class="col-4">No cost to attend.</div>
     </div>
 
@@ -65,7 +60,7 @@ title: Rekindle your craft
 
   </div>
 
-<div class="infocard">
+<div class="infocard teal text-center">
   <h2>Prompt-o-matic</h2>
   <p>Do you need a writing prompt? Try our handy web tool to generate one.</p>
   <a href="./wordy" class="btn btn-success wordy-btn">Wordy!</a>
