@@ -14,7 +14,13 @@ title: Rekindle your craft
 
 
 <div class="next-meeting infocard">
-  <h2>Next meetings</h2>
+  <h2>Next meeting</h2>
+
+    <div class="row">
+      <div class="col-4"><span class="virtual">In person!</span></div>
+
+    </div>
+
   <div class="row">
     <div class="col">
       {% for event in site.data.events %}
@@ -35,22 +41,12 @@ title: Rekindle your craft
     </div>
 
     <div class="row">
-      <div class="col-4"><span class="virtual"><i class="fa fa-desktop"></i>We&rsquo;ve gone virtual!</span></div>
-
-    </div>
-
-    <div class="row">
       <div class="col-4">Read about <a href="expect">what to expect</a> at Rekindle</div>
     </div>
 
     <div class="row">
       <div class="col-4">Organized by <a href="http://daphnestrassmann.com">Daphne Strassmann</a>
       </div>
-    </div>
-
-    <div class="row">
-
-      <div class="col-4">No cost to attend.</div>
     </div>
 
     {% assign one_event = site.data.events | first %}
