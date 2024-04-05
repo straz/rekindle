@@ -4,83 +4,97 @@ navtab: home
 title: Rekindle your craft
 ---
 
-<h1 class="text-center"><span class="re">RE</span>KINDLE YOUR CRAFT</h1>
-<h2 class="text-center">a free writing workshop</h2>
-
-<p class="mt-5">Join us for some inspired hands-on writing time.</p>
-
-<p>We’ll work from an evocative prompt, check in about our work, and hang out afterwards.</p>
-<p>If your writing is stuck then we guarantee you’ll be glad you came. Beginner or advanced, all writers welcome.</p>
+<div class="text-center">
+  <h1><span class="re">RE</span>KINDLE YOUR CRAFT</h1>
+  <h2 class="font-weight-normal">a creative writing workshop</h2>
 
 
-<div class="next-meeting infocard">
-  <h2>Next meeting</h2>
+  <div><a href="/">
+      <img class="big-typewriter" src="pix/typewriter.svg"/></a>
+  </div>
+</div>
 
-    <div class="row">
-      <div class="col-4"><span class="virtual">In person!</span></div>
+<div class="text-left mt-3 w-75 m-auto">
+    Join us for some inspired hands-on writing time.  We’ll work from
+    an evocative prompt, check in about our work, and hang out
+    afterwards.  If your writing is stuck then we guarantee you’ll be
+    glad you came. Beginner or advanced, all writers welcome.
+</div>
 
-    </div>
-
+<div class="next-meeting infocard p-5">
   <div class="row">
+      <div class="col text-center">
+	<h2>Next meeting</h2>
+      </div>
+      <div class="col text-center">
+	<h2>About</h2>
+      </div>
+  </div>
+
+  <div class="row text-center">
     <div class="col">
+      <div class="row mb-3"><em>Back in person!</em></div>
       {% for event in site.data.events %}
       <div class="row mb-5">
-	<div class="col-4">
-	  <b>{{ event.day }}</b> {{ event.date }}<br/>{{ event.time }}
+	<div class="col">
+	  <div><b>{{ event.day }}</b> {{ event.date }}<br/>{{ event.time }}</div>
+	  <a href="{{ event.eventbrite }}"
+	     target="eventbrite"
+	     class="btn btn-primary btn-sm mt-3">Register (free)</a>
+
 	</div>
 
-	<div class="col"><a href="{{ event.eventbrite }}"
-					  target="eventbrite"
-					  class="btn btn-primary">Register</a></div>
       </div>
       {% endfor %}
-  </div>
-  
-    <!-- <div class="col-4 summer"><i class="fa fa-sun-o mr-2"></i>
-        We're off for the summer!<br/>See you in Fall, 2020</div> -->
     </div>
-
-    <div class="row">
-      <div class="col-4">Read about <a href="expect">what to expect</a> at Rekindle</div>
-    </div>
-
-    <div class="row">
-      <div class="col-4">Organized by <a href="http://daphnestrassmann.com">Daphne Strassmann</a>
+    <div class="col">
+      <div class="row">
+	<div class="col">Read about <a href="expect">what to expect</a> at Rekindle</div>
       </div>
+
+      <div class="row">
+	<div class="col">Organized by <a href="http://daphnestrassmann.com">Daphne Strassmann</a>
+	</div>
+      </div>
+      
     </div>
 
-    {% assign one_event = site.data.events | first %}
-
-    <div class="row">
-    </div>
 
   </div>
 
-<div class="infocard teal text-center">
-  <h2>Prompt-o-matic</h2>
-  <p>Do you need a writing prompt? Try our handy web tool to generate one.</p>
-  <a href="./wordy" class="btn btn-success wordy-btn">Wordy!</a>
+  {% assign one_event = site.data.events | first %}
+
+</div>
+
+
+  <div class="infocard teal text-center w-50 py-3 m-auto mb-5">
+    <h2>Prompt-o-matic</h2>
+    <p>Do you need a writing prompt? Try our handy web tool to generate one.</p>
+    <a href="./wordy" class="btn btn-success wordy-btn">Wordy!</a>
   </div>
 
-<div class="infocard">
-  <h2>Join our mailing list</h2>
+
+<!--
+<div class="infocard p-5">
+  <h4>Join our mailing list</h4>
   <p>Keep informed about upcoming events. We promise not to spam or give your address to anyone else.</p>
   <form>
     <input id="email" type="email" placeholder="email">
-    <button id="signup_submit" type="submit">Add me</button>
+    <button class="btn btn-sm btn-primary" id="signup_submit" type="submit">Add me</button>
     <div class="spinner"><i class="fa fa-spin fa-cog"></i></div>
-      <div class="frame2">
-	<div class="success alert alert-success">
-	  
-	  <P><i class="fa fa-check-circle"></i> Thanks for signing up!</P>
-	  <button class="ok btn btn-default" role="button">OK</button>
-	</div>
-	<div class="fail alert alert-warning">
-	  <P><i class="fa fa-frown-o"></i>Oops, there was a problem. The reason is: <div class="reason"></div></P>
-	  <button class="ok btn btn-default" role="button">OK</button>
-	</div>
+    <div class="frame2">
+      <div class="success alert alert-success">
+	
+	<P><i class="fa fa-check-circle"></i> Thanks for signing up!</P>
+	<button class="ok btn btn-default" role="button">OK</button>
       </div>
+      <div class="fail alert alert-warning">
+	<P><i class="fa fa-frown-o"></i>Oops, there was a problem. The reason is: <div class="reason"></div></P>
+	<button class="ok btn btn-default" role="button">OK</button>
+      </div>
+    </div>
 
 
-    </form>
+  </form>
 </div>
+-->

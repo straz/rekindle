@@ -2,7 +2,11 @@
 layout: default
 home: True
 ---
-# What to expect from *Rekindle Your Craft*
+<center><div class="mb-5"><a href="/">
+      <img class="big-typewriter" src="pix/typewriter.svg"/></a>
+</div></center>
+
+<div class="expect-head">What to expect from Rekindle Your Craft</div>
 
 The first thing to know is that we try to run a laid-back environment.
 
